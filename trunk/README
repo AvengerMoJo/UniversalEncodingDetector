@@ -1,0 +1,9 @@
+Universal Encoding Detector is a library and tools to help detect different
+encoding in any char steam possible. It use directfb project interface arch
+as base and build different modules and plugins for different encoding 
+detection methods. Which also allow different user specific encoding detection
+to hard code specific way of how encoding being detected.
+Our goal is to reduce application work load to detect unknown encoding in 
+different condition, provide good guess and user customized encoding specific for 
+applications to use. Since it is build as libraray with plugins, model and interfaces
+in mind, it is possible to be used from different languages. 
