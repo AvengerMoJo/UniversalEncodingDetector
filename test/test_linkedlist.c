@@ -9,7 +9,7 @@ int main(){
     TestEntry  *node, *node9,*nullnode=NULL;
     LinkedList *testlink=NULL; 
     LinkedList *nulllink=NULL; 
-    int i;
+    int i = 0;
 
     // Testing append and foreach 
     printf( "**** Testing append from 0 to 4 into the list ****\n", i );
