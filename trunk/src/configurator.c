@@ -64,14 +64,14 @@ static UEDResult
 parse_args( const char *args )
 {
     UED_DEBUG_ENTER( CONFIGURATOR , "Parsing different argruments" );
-    char *buf = alloca( strlen(args) + 1 );
+	UEDResult ret=UED_OK;
+    char* buf = alloca( strlen(args) + 1 );
 
     strcpy( buf, args );
 
     while (buf && buf[0]) {
-        UEDResult ret=UED_OK;
-        char* value = NULL;
-        char* next = NULL;
+		char* value = NULL;
+		char* next = NULL;
 
         if ((next = strchr( buf, ',' )) != NULL)
             *next++ = '\0';
@@ -89,6 +89,8 @@ parse_args( const char *args )
         }
     }
     UED_DEBUG_EXIT( CONFIGURATOR , "Parser finish successfully" );
+
+	return ret;
 }
 
 /*
